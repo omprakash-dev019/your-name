@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name | Meanings | ASMR</title>
+  <link rel="stylesheet" href="./output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <style>
+    /* 🌌 Gradient animation */
+    body {
+      background: radial-gradient(circle at 20% 30%, #0a0015, #1a012b, #320045);
+      background-size: 200% 200%;
+      animation: gradientShift 15s ease-in-out infinite alternate;
+      overflow: hidden;
+      color: white;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    /* ✨ Floating Orbs */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 100, 255, 0.25) 0%, transparent 70%);
+      animation: float 12s ease-in-out infinite;
+      opacity: 0.6;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-50px) scale(1.2); opacity: 0.9; }
+    }
+
+    /* 🌠 Sparkles */
+    .sparkle {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite ease-in-out;
+      opacity: 0.6;
+    }
+    @keyframes twinkle {
+      0%,100% { opacity: 0.2; transform: scale(0.5); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+
+    /* 💫 Fade-in text */
+    .fade-in {
+      animation: fadeIn 2.5s ease-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 🎀 Glowing Button */
+    .magic-btn {
+      animation: glowPulse 2s ease-in-out infinite alternate;
+      transition: all 0.3s ease;
+    }
+    @keyframes glowPulse {
+      0% {
+        box-shadow: 0 0 10px rgba(255,0,180,0.4),
+                    0 0 20px rgba(255,0,255,0.2);
+      }
+      100% {
+        box-shadow: 0 0 25px rgba(255,0,180,0.8),
+                    0 0 60px rgba(255,0,255,0.4);
+      }
+    }
+  </style>
+</head>
+
+<body class="relative flex flex-col items-center justify-center min-h-screen text-center">
+
+  <!-- 🌠 Floating background decorations -->
+  <div class="orb" style="top:10%; left:20%; width:120px; height:120px; animation-delay:1s;"></div>
+  <div class="orb" style="bottom:10%; right:15%; width:180px; height:180px; animation-delay:2s;"></div>
+  <div class="sparkle" style="top:25%; left:70%; animation-delay:1s;"></div>
+  <div class="sparkle" style="top:60%; left:30%; animation-delay:2s;"></div>
+  <div class="sparkle" style="top:80%; left:50%; animation-delay:3s;"></div>
+
+  <!-- 💞 Main Content -->
+  <div class="fade-in max-w-3xl mx-auto px-6">
+    <p class="text-4xl sm:text-5xl font-semibold text-pink-400 drop-shadow-[0_0_15px_rgba(255,0,200,0.5)]">
+      ‘Whispers of your name ...’
+    </p>
+
+    <p class="text-lg sm:text-2xl text-pink-100 mt-10 leading-relaxed">
+      Every name carries a story, a meaning, a heartbeat.<br>
+      But yours… it feels different — like it was written by the stars themselves 💕
+    </p>
+
+    <p class="text-xl sm:text-2xl text-pink-200 mt-10 font-medium italic">
+      Let’s find out what your name truly means — not from books, but from hearts.
+    </p>
+
+    <a href="reveal_name.html"><button class="w-2xs h-16 bg-purple-500 rounded-3xl text-center relative top-40 block mx-auto"> My Name’s Magic 🎀</button></a>
+  </div>
+
+</body>
+</html>

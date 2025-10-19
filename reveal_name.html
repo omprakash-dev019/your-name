@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>page2 | Type your name ✨</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* 🌌 Animated gradient background */
+    body {
+      background: radial-gradient(circle at 20% 30%, #1b003a, #050011 90%);
+      overflow: hidden;
+      animation: shiftBackground 20s ease-in-out infinite alternate;
+    }
+    @keyframes shiftBackground {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    /* 🌟 Floating orbs */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+      animation: float 10s ease-in-out infinite;
+      opacity: 0.4;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-40px) scale(1.2); opacity: 0.7; }
+    }
+
+    /* 🌠 Stars */
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: twinkle 2s infinite ease-in-out;
+    }
+    @keyframes twinkle {
+      0%,100% { opacity: 0.2; transform: scale(0.5); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    /* 🌈 Neon glow animation */
+    .neon {
+      animation: neonPulse 2s ease-in-out infinite alternate;
+    }
+    @keyframes neonPulse {
+      0% {
+        box-shadow: 0 0 10px rgba(255,0,150,0.5),
+                    0 0 20px rgba(255,0,200,0.2);
+      }
+      100% {
+        box-shadow: 0 0 25px rgba(255,0,150,0.8),
+                    0 0 60px rgba(255,0,200,0.4);
+      }
+    }
+
+    /* 🌙 Fade-in for the content */
+    .fade-in {
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 💫 Subtle aurora gradient overlay */
+    .aurora::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(
+        from 0deg,
+        rgba(255,0,200,0.15),
+        rgba(0,255,255,0.1),
+        rgba(255,255,255,0.1),
+        rgba(255,0,150,0.15)
+      );
+      animation: rotateAurora 30s linear infinite;
+      mix-blend-mode: overlay;
+      filter: blur(120px);
+    }
+    @keyframes rotateAurora {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+
+<body class="aurora relative min-h-screen flex flex-col items-center justify-center text-white">
+
+  <!-- 🌠 Background stars -->
+  <div class="star" style="top:10%; left:30%; animation-delay:0.2s;"></div>
+  <div class="star" style="top:40%; left:70%; animation-delay:1s;"></div>
+  <div class="star" style="top:60%; left:20%; animation-delay:2s;"></div>
+  <div class="star" style="top:80%; left:50%; animation-delay:1.5s;"></div>
+
+  <!-- 💫 Floating orbs -->
+  <div class="orb" style="top:20%; left:10%; width:100px; height:100px; animation-delay:1s;"></div>
+  <div class="orb" style="top:70%; left:80%; width:150px; height:150px; animation-delay:2s;"></div>
+  <div class="orb" style="top:50%; left:40%; width:80px; height:80px; animation-delay:3s;"></div>
+
+  <!-- ✨ Main Content -->
+  <div class="fade-in z-10 text-center">
+    <p class="text-3xl sm:text-4xl font-semibold mb-10 text-pink-300 drop-shadow-[0_0_15px_rgba(255,0,150,0.5)]">
+      What should I call you, beautiful soul?
+    </p>
+
+<input type="text" id="input" class="text-center relative top-40 focus:bg-red-300 block mx-auto w-[19rem] h-[3rem] border-2 hover:border-pink-500 rounded-3xl" placeholder="Type Your Name Sunshine"> <button id="button" class="bg-red-600 opacity-50 cursor-not-allowed w-[19rem] h-[3rem] text-white px-6 py-2 rounded-3xl relative top-48 block mx-auto"> Unfold Your Name 🤞 </button>
+  </div>
+
+  <script>
+    const input = document.getElementById('input');
+    const button = document.getElementById('button');
+
+    button.disabled = true;
+
+    input.addEventListener('input', () => {
+      if (input.value.trim() !== "") {
+        button.disabled = false;
+        button.classList.remove('opacity-50', 'cursor-not-allowed');
+        button.classList.add('opacity-100', 'cursor-pointer');
+      } else {
+        button.disabled = true;
+        button.classList.add('opacity-50', 'cursor-not-allowed');
+        button.classList.remove('opacity-100', 'cursor-pointer');
+      }
+    });
+
+    button.addEventListener('click', () => {
+      if (input.value.trim().toLowerCase() === "angel") {
+        window.location.href = "meaning.html";
+      } else {
+        alert("Please enter your name first! 💖");
+      }
+    });
+  </script>
+</body>
+</html>
