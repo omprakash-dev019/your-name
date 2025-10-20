@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avash — Flower Theme Name Meaning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(to bottom, #fff5f7, #ffe6f0);
+      overflow-x: hidden;
+      color: #4b2e83;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1518611012118-f1f28ebbd98b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080') no-repeat center/cover;
+      overflow: hidden;
+    }
+
+    .name-title {
+      font-size: 5rem;
+      color: #ff5fa2;
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px #ff9a9e, 0 0 20px #fad0c4;
+      animation: floatText 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatText {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-20px);}
+      100% {transform: translateY(0);}
+    }
+
+    /* Floating petals */
+    .petal {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: rgba(255,192,203,0.7);
+      border-radius: 50%;
+      animation: drift linear infinite;
+    }
+
+    @keyframes drift {
+      0% {transform: translateY(0) translateX(0);}
+      50% {transform: translateY(-40px) translateX(20px);}
+      100% {transform: translateY(0) translateX(0);}
+    }
+
+    /* Cards */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .meaning-card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 1rem;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transform: rotate(var(--rotate));
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .meaning-card:hover {
+      transform: scale(1.05) rotate(0deg);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Letter float */
+    .letter {
+      font-size: 4rem;
+      color: #ff5fa2;
+      text-shadow: 0 0 10px #ff9a9e;
+      display: inline-block;
+      margin: 0 0.5rem;
+      animation: floatLetter 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatLetter {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+      100% {transform: translateY(0);}
+    }
+
+    /* Next button */
+    .next-btn {
+      display: inline-block;
+      margin: 2rem auto;
+      background: #ff5fa2;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(255,95,162,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .next-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(255,95,162,0.7);
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="name-title">AVASH</div>
+    <!-- Floating petals -->
+    <div class="petal" style="top:10%; left:15%; animation-duration:6s;"></div>
+    <div class="petal" style="top:30%; left:70%; animation-duration:5s;"></div>
+    <div class="petal" style="top:50%; left:40%; animation-duration:7s;"></div>
+    <div class="petal" style="top:70%; left:80%; animation-duration:6s;"></div>
+    <div class="petal" style="top:80%; left:20%; animation-duration:8s;"></div>
+  </div>
+
+  <!-- Meaning Cards -->
+  <div class="card-container">
+    <div class="meaning-card" style="--rotate:-3deg;">
+      <h2 class="text-2xl font-bold mb-2">Core Meaning</h2>
+      <p>Avash signifies <strong>Existence and Foundation</strong> — stability, grounding, and the essence of being.</p>
+    </div>
+
+    <div class="meaning-card" style="--rotate:2deg;">
+      <h2 class="text-2xl font-bold mb-2">Personality Symbolism</h2>
+      <p>The name represents <strong>Strength and Calmness</strong>, providing balance in life and a steady presence.</p>
+    </div>
+
+    <div class="meaning-card" style="--rotate:-2deg;">
+      <h2 class="text-2xl font-bold mb-2">Spiritual Insight</h2>
+      <p>Avash inspires <strong>inner peace and mindfulness</strong>, reminding one to stay grounded while reaching for growth.</p>
+    </div>
+
+    <div class="meaning-card" style="--rotate:3deg;">
+      <h2 class="text-2xl font-bold mb-2">Life Guidance</h2>
+      <p>The name symbolizes <strong>navigating life with wisdom and patience</strong>, balancing action with reflection.</p>
+    </div>
+  </div>
+
+  <!-- Letter-by-Letter Section -->
+  <header class="text-center mt-8">
+    <h1 class="text-4xl mb-2">Letter Meaning of 
+      <span class="letter">A</span><span class="letter">V</span><span class="letter">A</span><span class="letter">S</span><span class="letter">H</span>
+    </h1>
+    <p class="text-lg text-gray-700">Explore the significance of each letter</p>
+  </header>
+
+  <div class="card-container">
+    <div class="meaning-card" style="--rotate:-2deg;">
+      <h2 class="text-2xl font-bold mb-2">A</h2>
+      <p>Represents <strong>Awareness</strong> — insight and understanding of life.</p>
+    </div>
+    <div class="meaning-card" style="--rotate:1deg;">
+      <h2 class="text-2xl font-bold mb-2">V</h2>
+      <p>Symbolizes <strong>Vitality</strong> — energy and enthusiasm for life.</p>
+    </div>
+    <div class="meaning-card" style="--rotate:-1deg;">
+      <h2 class="text-2xl font-bold mb-2">A</h2>
+      <p>Stands for <strong>Adaptability</strong> — flexibility in different situations.</p>
+    </div>
+    <div class="meaning-card" style="--rotate:2deg;">
+      <h2 class="text-2xl font-bold mb-2">S</h2>
+      <p>Represents <strong>Stability</strong> — groundedness and strong foundation.</p>
+    </div>
+    <div class="meaning-card" style="--rotate:-3deg;">
+      <h2 class="text-2xl font-bold mb-2">H</h2>
+      <p>Symbolizes <strong>Harmony</strong> — balance within self and surroundings.</p>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <a href="nextpage.html" class="next-btn">Next →</a>
+  </div>
+</body>
+</html>

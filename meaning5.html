@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pragyan — Name Meaning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(to bottom, #a0e9ff, #67d6f7);
+      overflow-x: hidden;
+      color: #0e3d59;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background: radial-gradient(circle at top, #ade8f4, #48cae4);
+      overflow: hidden;
+    }
+
+    .name-title {
+      font-size: 5rem;
+      color: #fff;
+      background: linear-gradient(90deg, #00b4d8, #90e0ef);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 15px rgba(0,180,216,0.5), 0 0 25px rgba(144,224,239,0.5);
+      animation: floatText 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatText {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-20px);}
+      100% {transform: translateY(0);}
+    }
+
+    .floating-particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      0% {transform: translateY(0) translateX(0);}
+      50% {transform: translateY(-30px) translateX(20px);}
+      100% {transform: translateY(0) translateX(0);}
+    }
+
+    /* Meaning Cards */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .meaning-card {
+      background: rgba(255,255,255,0.8);
+      border-radius: 1rem;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transform: rotate(var(--rotate));
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .meaning-card:hover {
+      transform: scale(1.05) rotate(0deg);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Next Button */
+    .next-btn {
+      display: inline-block;
+      margin: 2rem auto;
+      background: #00b4d8;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(0,180,216,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .next-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(0,180,216,0.7);
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="name-title">PRAGYAN</div>
+    <!-- Floating Particles -->
+    <div class="floating-particle" style="top:10%; left:15%; animation-duration:5s;"></div>
+    <div class="floating-particle" style="top:25%; left:70%; animation-duration:6s;"></div>
+    <div class="floating-particle" style="top:50%; left:40%; animation-duration:7s;"></div>
+    <div class="floating-particle" style="top:70%; left:85%; animation-duration:5s;"></div>
+    <div class="floating-particle" style="top:80%; left:20%; animation-duration:8s;"></div>
+  </div>
+
+  <!-- Name Meaning Cards -->
+  <div class="card-container">
+    <div class="meaning-card" style="--rotate:-3deg;">
+      <h2 class="text-2xl font-bold mb-2">Core Meaning</h2>
+      <p>Pragyan signifies <strong>Wisdom and Intellect</strong> — the magical ability to see beyond the obvious, seeking knowledge and understanding of the world.</p>
+    </div>
+
+    <div class="meaning-card" style="--rotate:2deg;">
+      <h2 class="text-2xl font-bold mb-2">Personality Symbolism</h2>
+      <p>The name represents <strong>Curiosity and Enlightenment</strong>, inspiring one to explore mysteries, learn, and grow with insight.</p>
+    </div>
+
+    <div class="meaning-card" style="--rotate:-2deg;">
+      <h2 class="text-2xl font-bold mb-2">Spiritual Insight</h2>
+      <p>Pragyan encourages <strong>mindfulness, clarity, and self-awareness</strong>, guiding one toward inner balance and personal growth.</p>
+    </div>
+
+    <div class="meaning-card" style="--rotate:3deg;">
+      <h2 class="text-2xl font-bold mb-2">Life Guidance</h2>
+      <p>This name symbolizes <strong>learning and wisdom-driven decisions</strong> in life, helping navigate challenges with intelligence and intuition.</p>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <a href="nextpage4.html" class="next-btn">Next →</a>
+  </div>
+</body>
+</html>
